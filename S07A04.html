@@ -1,0 +1,16 @@
+<html>
+    <head><title> Mouse Pointer coordinate</title></head>
+    
+    <body>
+        <textarea rows="10" cols="100" id="result"></textarea>
+        <script>
+            document.getElementById("result").addEventListener('mouseover', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            var time = new Date();
+
+            document.getElementById('result').innerHTML += "X:" + x + "; Y:" + y + " Time: " + time;
+            }, false);
+        </script>
+    </body>
+</html>
